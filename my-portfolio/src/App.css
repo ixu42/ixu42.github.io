@@ -1,10 +1,10 @@
-/* Navbar styling */
+/* Navbar */
 .navbar {
   z-index: 100;
   display: flex; /* by default flex-direction is row */
   justify-content: space-between;
   align-items: center; /* align items on the cross axis */
-  font-size: 25px;
+  font-size: 24px;
   padding: 10px 20px;  
 }
 
@@ -43,5 +43,33 @@
 }
 
 .nav-links li:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 90;
+  padding: 10px 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #bbbbbb;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
   transform: scale(1.2);
 }
