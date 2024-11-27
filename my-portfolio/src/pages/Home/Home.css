@@ -1,0 +1,48 @@
+.intro-section {
+  background-color: #111111d3;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.2); /* Softer shadow */
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  padding: 6rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.name {
+  font-size: 40px;
+  color: var(--color);
+  animation: revealText 7s ease-out forwards;
+}
+
+@keyframes revealText {
+  0% {
+    clip-path: inset(0 100% 0 0); /* start fully hidden */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* fully visible */
+  }
+}
+
+.tagline {
+  font-size: 36px;
+  color: var(--color);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 18px;
+  color: var(--color);
+  margin-bottom: 1rem;
+}

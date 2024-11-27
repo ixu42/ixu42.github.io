@@ -10,11 +10,9 @@
 
 .logo {
   text-decoration: none;
-  color: #bbbbbb;
+  color: var(--color);
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 5px 10px;
-  border-radius: 5px;
   transition: transform 0.3s;
 }
 
@@ -38,7 +36,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #bbbbbb;
+  color: var(--color);
   letter-spacing: 1px;
 }
 
@@ -66,10 +64,15 @@
 .social-links a {
   text-decoration: none;
   font-size: 28px;
-  color: #bbbbbb;
+  color: var(--color);
   transition: transform 0.3s;
 }
 
 .social-links a:hover {
   transform: scale(1.2);
+}
+
+/* Pages */
+.pages {
+  padding: 50px 20px;
 }
