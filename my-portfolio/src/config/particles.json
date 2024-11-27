@@ -2,7 +2,7 @@
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#000"
+      "value": "#111111"
     },
     "image": "",
     "position": "",
@@ -59,7 +59,7 @@
     },
     "modes": {
       "trail": {
-        "delay": 0.005,
+        "delay": 0.02,
         "pauseOnStop": true,
         "quantity": 5,
         "particles": {
