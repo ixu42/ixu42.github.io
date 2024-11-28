@@ -13,6 +13,7 @@
   font-size: 1.2rem;
   width: 100%;
   max-width: 1200px;
+  user-select: none; /* disable text selection */
 }
 
 .logo {
@@ -20,12 +21,7 @@
   color: var(--color);
   font-weight: bold;
   letter-spacing: 1px;
-  transition: transform 0.3s;
   margin-right: auto; /* push nav-links to the right */
-}
-
-.logo:hover {
-  transform: scale(1.2);
 }
 
 .nav-links {
@@ -42,13 +38,61 @@
   transition: transform 0.3s;
 }
 
+.nav-links li:hover {
+  transform: scale(1.2);
+}
+
 .nav-links a {
   text-decoration: none;
   color: var(--color);
 }
 
-.nav-links li:hover {
-  transform: scale(1.2);
+/* hamburger button (only shown on small screens) */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: var(--color);
+  cursor: pointer;
+}
+
+/* ensure better responsiveness */
+@media screen and (max-width: 600px) {
+  .mobile-menu {
+    display: none; /* hide nav links by default*/
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* position below navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111111d3;
+    z-index: 99;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* space between items vertically */
+    padding: 0;
+    width: auto;
+  }
+
+  /* show hamburger on small screens */
+  .hamburger {
+    display: block;
+  }
+
+  /* show the nav links when the menu is active */
+  .mobile-menu.active {
+    display: flex; /* show the nav links when active */
+  }
+ 
 }
 
 /* Footer */
