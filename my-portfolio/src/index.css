@@ -1,6 +1,14 @@
-html, body, #root {
+/* css reset */
+* {
   margin: 0;
   padding: 0;
+  /* including padding and border in an element's total width and height */
   box-sizing: border-box;
+}
+
+html, body, #root {
+  max-width: 1200px;
+  margin: 0 auto; /* center the element horizontally */
+  font-family: 'Geist', sans-serif;
   --color: #fcf6f4;
 }
