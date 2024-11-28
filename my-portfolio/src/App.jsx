@@ -13,7 +13,7 @@ const App = () => {
     <Router>
       <ParticlesBackground id="tsparticles"/>
       <Navbar />
-        <main className="pages">
+        <main className="content">
           <Routes>
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/projects" element={<Projects />} />

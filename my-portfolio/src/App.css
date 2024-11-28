@@ -126,7 +126,8 @@
   transform: scale(1.2);
 }
 
-/* Pages */
-.pages {
+/* Content */
+.content {
   padding: 50px 20px;
+  max-width: 1200px;
 }

@@ -7,8 +7,11 @@
 }
 
 html, body, #root {
-  max-width: 1200px;
-  margin: 0 auto; /* center the element horizontally */
   font-family: 'Geist', sans-serif;
   --color: #fcf6f4;
+  height: 100%; /* take full height */
+  width: 100%; /* take full width */
+  display: flex;
+  align-items: center; /* center vertically */
+  justify-content: center; /* center horizontally */
 }
