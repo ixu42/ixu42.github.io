@@ -3,17 +3,225 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Under Construction</title>
+	<meta name="description" content="Ivy Xu — software engineer in Helsinki focused on backend systems, data platforms, and privacy-aware services.">
+	<title>Ivy Xu</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Coming Soon!</h1>
-		<p>Thank you for visiting my portfolio. I'm currently working hard to showcase my latest projects and skills. Stay tuned for exciting updates!</p>
-		<p>In the meantime, feel free to connect with me on <a href="https://www.linkedin.com/in/ixu42/" target="_blank">LinkedIn</a> or follow me on <a href="https://github.com/ixu42" target="_blank">GitHub</a>.</p>
-		<div class="icon-container">
-			<img src="assets/cat.png" alt="Cat Icon" class="icon">
-		</div>
-	</div>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<a class="mark" href="#top" aria-label="Ivy Xu — home">IX</a>
+		<nav class="site-nav" aria-label="Primary">
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#work">Work</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main id="main">
+		<section class="hero" id="top" aria-labelledby="hero-name">
+			<div class="hero-copy">
+				<h1 id="hero-name">Ivy Xu</h1>
+				<p class="hero-lede">
+					Motivated software engineer who treats every problem as something to figure out,
+					not something to fear.
+				</p>
+				<div class="hero-actions">
+					<a class="btn btn-primary" href="#experience">Experience</a>
+					<a class="btn btn-ghost" href="https://www.linkedin.com/in/ixu42/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="about" aria-labelledby="about-title">
+			<div class="section-heading">
+				<h2 id="about-title">About</h2>
+				<p>Backend, data, and systems.</p>
+			</div>
+			<div class="about-body">
+				<p>
+					I’m a software engineer at Wolt in Helsinki, working on data-platform
+					and governance services — from Snowflake access controls to privacy
+					workflows that support regulatory rights.
+				</p>
+				<p>
+					Before that I studied software engineering at Hive Helsinki (part of the 42 network),
+					where I built systems in C and C++ alongside full-stack projects.
+				</p>
+				<ul class="skill-list" aria-label="Skills">
+					<li>Python</li>
+					<li>Go</li>
+					<li>C / C++</li>
+					<li>SQL</li>
+					<li>PostgreSQL</li>
+					<li>Snowflake</li>
+					<li>Data orchestration</li>
+					<li>Distributed systems</li>
+					<li>Docker</li>
+					<li>Linux</li>
+					<li>Agentic coding workflows</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section" id="experience" aria-labelledby="experience-title">
+			<div class="section-heading">
+				<h2 id="experience-title">Experience</h2>
+				<p>Professional work.</p>
+			</div>
+			<article class="experience">
+				<header class="experience-header">
+					<div>
+						<h3>Software Engineer</h3>
+						<p class="experience-org">Wolt</p>
+					</div>
+					<p class="experience-meta">Helsinki · Nov 2025 – Present</p>
+				</header>
+				<ul class="experience-points">
+					<li>
+						Owned the end-to-end design and production launch of a GDPR
+						request-tracking platform — data storage, CDC pipelines, backend APIs,
+						frontend, and infrastructure — so privacy and legal stakeholders can
+						self-serve request status instead of relying on engineers.
+					</li>
+					<li>
+						Built secure data-extraction workflows for data-subject access requests
+						and legal holds using S3 lifecycle policies, workload-based IAM,
+						presigned URLs, and event-driven orchestration.
+					</li>
+					<li>
+						Operated and improved GDPR data-export pipelines, turning recurring
+						production issues into durable fixes for more reliable privacy request processing.
+					</li>
+				</ul>
+			</article>
+			<article class="experience">
+				<header class="experience-header">
+					<div>
+						<h3>Software Engineering Intern</h3>
+						<p class="experience-org">Wolt</p>
+					</div>
+					<p class="experience-meta">Helsinki · May 2025 – Nov 2025</p>
+				</header>
+				<ul class="experience-points">
+					<li>
+						Owned a role-based access control (RBAC) project, building a service
+						that manages Snowflake masking policies to protect personal data
+						in the warehouse.
+					</li>
+					<li>
+						Contributed to a Snowflake cost attribution initiative using
+						in-house data orchestration tools.
+					</li>
+				</ul>
+			</article>
+			<article class="experience">
+				<header class="experience-header">
+					<div>
+						<h3>Software Engineering</h3>
+						<p class="experience-org">Hive Helsinki</p>
+					</div>
+					<p class="experience-meta">Helsinki · 2023 – 2025</p>
+				</header>
+				<ul class="experience-points">
+					<li>
+						Peer-driven curriculum covering systems programming, networking,
+						and collaborative project delivery.
+					</li>
+					<li>
+						Built production-style projects from an HTTP server and shell
+						to Docker-based service infrastructure.
+					</li>
+				</ul>
+			</article>
+		</section>
+
+		<section class="section" id="work" aria-labelledby="work-title">
+			<div class="section-heading">
+				<h2 id="work-title">Selected projects</h2>
+				<p>Systems and backend-leaning work.</p>
+			</div>
+			<ul class="project-list">
+				<li>
+					<a class="project" href="https://github.com/ixu42/webserv" target="_blank" rel="noopener noreferrer">
+						<span class="project-meta">
+							<span class="project-name">webserv</span>
+							<span class="project-tags">C++</span>
+						</span>
+						<span class="project-desc">HTTP server built from scratch — sockets, request handling, and configuration.</span>
+					</a>
+				</li>
+				<li>
+					<a class="project" href="https://github.com/ixu42/minishell" target="_blank" rel="noopener noreferrer">
+						<span class="project-meta">
+							<span class="project-name">minishell</span>
+							<span class="project-tags">C</span>
+						</span>
+						<span class="project-desc">Bash-like shell with parsing, pipelines, and process control.</span>
+					</a>
+				</li>
+				<li>
+					<a class="project" href="https://github.com/ixu42/inception" target="_blank" rel="noopener noreferrer">
+						<span class="project-meta">
+							<span class="project-name">inception</span>
+							<span class="project-tags">Docker · NGINX · MariaDB</span>
+						</span>
+						<span class="project-desc">Multi-service Docker infrastructure with clear networking and volume rules.</span>
+					</a>
+				</li>
+				<li>
+					<a class="project" href="https://github.com/ixu42/web-express-challenge" target="_blank" rel="noopener noreferrer">
+						<span class="project-meta">
+							<span class="project-name">Pokédex web app</span>
+							<span class="project-tags">Node · Express · PostgreSQL</span>
+						</span>
+						<span class="project-desc">Hive Web Express Challenge 2024 — authenticated full-stack app with a PostgreSQL backend.</span>
+					</a>
+				</li>
+				<li>
+					<a class="project" href="https://github.com/ixu42/full-stack-open" target="_blank" rel="noopener noreferrer">
+						<span class="project-meta">
+							<span class="project-name">Full Stack Open</span>
+							<span class="project-tags">JavaScript · Node · React</span>
+						</span>
+						<span class="project-desc">University of Helsinki course work across APIs, databases, and modern web apps.</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="section contact" id="contact" aria-labelledby="contact-title">
+			<div class="section-heading">
+				<h2 id="contact-title">Contact</h2>
+				<p>Happy to connect.</p>
+			</div>
+			<p class="contact-copy">
+				Find me on
+				<a href="https://github.com/ixu42" target="_blank" rel="noopener noreferrer">GitHub</a>
+				or
+				<a href="https://www.linkedin.com/in/ixu42/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+			</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> Ivy Xu</p>
+		<p class="built-with">Built with <a href="https://cursor.com" target="_blank" rel="noopener noreferrer">Cursor</a></p>
+	</footer>
+
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+
+		document.querySelector(".mark")?.addEventListener("click", (event) => {
+			event.preventDefault();
+			window.scrollTo({ top: 0, behavior: "smooth" });
+			history.replaceState(null, "", window.location.pathname + window.location.search);
+		});
+	</script>
 </body>
 </html>
